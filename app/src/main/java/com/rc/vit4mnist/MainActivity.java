@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity implements Runnable {
     private Button mClearButton;
     private HandWrittenDigitView mDrawView;
 
-    private static final float MNISI_STD = 0.1307f;
-    private static final float MNISI_MEAN = 0.3081f;
-    private static final float BLANK = - MNISI_STD / MNISI_MEAN;
-    private static final float NON_BLANK = (1.0f - MNISI_STD) / MNISI_MEAN;
+    private static final float MNIST_STD = 0.1307f;
+    private static final float MNIST_MEAN = 0.3081f;
+    private static final float BLANK = - MNIST_STD / MNIST_MEAN;
+    private static final float NON_BLANK = (1.0f - MNIST_STD) / MNIST_MEAN;
     private static final int MNIST_IMAGE_SIZE = 28;
 
     public static String assetFilePath(Context context, String assetName) throws IOException {
